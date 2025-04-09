@@ -24,7 +24,7 @@ public class Gestao {
 
     public void listarProdutos(){
         if (produtos.isEmpty()){
-            System.out.println("nenhum produto na agenda.");
+            System.out.println("nenhum produto adicionado.");
         }
         else {
             for(Produtos produto : produtos){

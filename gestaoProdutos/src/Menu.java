@@ -9,7 +9,7 @@ public class Menu {
         int opcao;
 
         do{
-            System.out.println("\nMENU DE GERENCIAMENTO DO MERCADO");
+            System.out.println("\nMENU DE GERENCIAMENTO DE PRODUTOS ");
             System.out.println("\n(1) adicionar produto");
             System.out.println("(2) listar produtos");
             System.out.println("(3) buscar produto");
@@ -50,9 +50,9 @@ public class Menu {
     private static void adicionarProduto(){
         System.out.println("digite o nome do produto: ");
         String nome = scanner.nextLine();
-        System.out.println("digite o preco do produto: ");
+        System.out.println("digite o preço do produto: ");
         String preco = scanner.nextLine();
-        System.out.println("digite a quantidade quantidade do produto: ");
+        System.out.println("digite a quantidade do produto: ");
         String quantidade = scanner.nextLine();
         System.out.println("digite o codigo do produto: ");
         String codigo = scanner.nextLine();
@@ -66,7 +66,7 @@ public class Menu {
     }
 
     private static void buscarProduto(){
-        System.out.println("digite o nome do seu contato: ");
+        System.out.println("digite o nome do produto: ");
         String nome = scanner.nextLine();
         Produtos produtos = gestao.buscarProduto(nome);
 
